@@ -1,0 +1,65 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.container
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 30px 0
+
+.grid
+    display: grid
+
+.header
+    min-height: 300px 
+    background-size: cover
+    background-position: center
+    position: relative
+    align-content: center
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $dark
+        opacity: .90
+    .header__content
+        z-index: 1
+        color: #fff
+        text-align: center
+        padding: 60px $gutter
+        .header__title
+            font-size: 60px
+            font-family: intro-grid, sans-serif
+            font-weight: normal
+            margin: 20px 0
+            line-height: 1.5
+        .header__location-inf
+            font-size: 16px
+        .header__button
+            margin: 10px
+
+.footer
+    padding: 60px 0
+    background-color: darken($dark, 8%)
+    text-align: center
+    color: #4E5355
+    .footer__logo
+        font-family: intro-grid, sans-serif
+        font-size: 22px
+        line-height: 1.16
+        span
+            display: block
+            color: #707476
+            font-size: 26.8px
+    .footer__copy
+        font-size: 20px
+        font-weight: bold
+        color: #494D50
+        margin-top: 20px
+
+@import "media"

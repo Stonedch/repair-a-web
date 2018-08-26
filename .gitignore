@@ -1,3 +1,4 @@
 package-lock.json
 node_modules/
 css/
+app/.DS_Store
