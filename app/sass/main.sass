@@ -43,6 +43,82 @@
         .header__button
             margin: 10px
 
+.button
+    display: inline-block
+    border: none
+    color: #fff
+    text-decoration: none
+    background-color: $accent
+    padding: 10px 60px
+    font-size: 20px
+    font-weight: 800
+    border-radius: 2px
+    text-align: center
+    position: relative
+    outline: none
+    transition: background-color .1s ease
+    cursor: pointer
+    &::after
+        transition: background-color .2s ease
+        position: absolute
+        content: ''
+        height: 4px
+        bottom: 0
+        width: 100%
+        background-color: darken($accent, 50%)
+        opacity: .18
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+        left: 0
+    &:focus, &:hover
+        text-decoration: none
+        color: #fff
+    &:hover
+        background-color: lighten($accent, 5%)
+        &::after
+            opacity: .22
+    &:active
+        background-color: darken($accent, 5%)
+        &::after
+            opacity: .32
+
+    &.button-gray
+        background-color: $gray
+        &::after
+            background-color: darken($gray, 15%)
+        &:hover
+            background-color: lighten($gray, 5%)
+            &::after
+                opacity: .22
+        &:active
+            background-color: darken($gray, 5%)
+            &::after
+                opacity: .32
+
+.callback
+    padding: 30px $gutter
+    background-color: $dark
+    .callback__input
+        background-color: lighten($dark, 6%)
+        border: none
+        padding: 15px 20px
+        width: 100%
+        font-family: Arial, sans-serif
+        font-style: italic
+        outline: none
+        transition: background-color .25s ease
+        &:focus
+            background-color: $light
+        &::placeholder
+            color: lighten($dark, 20%)
+    .callback__form
+        grid-gap: $gutter
+        grid-template-columns: repeat(4, 1fr)
+    .callback__button
+        font-size: 17px
+        padding: 14.5px
+        width: 100%
+
 .footer
     padding: 60px 0
     background-color: darken($dark, 8%)
