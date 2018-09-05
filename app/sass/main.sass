@@ -4,10 +4,7 @@
 @import "vars"
 
 .container
-    width: 90%
-    max-width: 1200px
-    margin: 0 auto
-    padding: 30px 0
+    margin-left: 300px
 
 .grid
     display: grid
@@ -63,6 +60,51 @@
             background-color: darken($gray, 5%)
             &::after
                 opacity: .32
+
+.menu
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 3
+    min-height: 100vh
+    width: 300px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    background-color: #fff
+    .menu__header
+        background-color: darken($dark, 8%)
+        text-align: center
+        height: 130px
+        color: #fff
+        .menu__title
+            margin: 0
+            font-size: 50px
+            font-family: intro-grid, sans-serif
+            font-weight: normal
+        .menu__location-info
+            margin: 0
+            font-size: 13px
+            font-family: sans-serif
+            font-weight: normal
+    .menu__footer
+        padding: 10px 0
+        height: 100px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        background-color: darken($dark, 8%)
+        text-align: center
+        color: #fff
+        .menu__footer-element
+            margin-left: 30px
+            display: flex
+            font-family: monospace
+            font-size: 15px
+            i
+                margin: 4px
+            p
+                margin: 0 0 0 20px
 
 .header
     min-height: 300px 
