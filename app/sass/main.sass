@@ -66,11 +66,11 @@
     top: 0
     left: 0
     z-index: 3
-    min-height: 100vh
+    min-height: 100%
     width: 300px
-    display: flex
-    justify-content: space-between
-    flex-direction: column
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 130px minmax(0, 100%) 130px
     background-color: #fff
     .menu__header
         background-color: darken($dark, 8%)
@@ -87,9 +87,21 @@
             font-size: 13px
             font-family: sans-serif
             font-weight: normal
+    .menu__nav
+        margin: 0
+        padding: 50px 0
+        text-align: center
+        .menu__link
+            font-family: raleway-grid, sans-serif
+            font-size: 16px
+            color: #333
+        ul,li, a
+            list-style-type: none
+            text-decoration: none
+            margin: 0
+            padding: 0
     .menu__footer
         padding: 10px 0
-        height: 100px
         display: flex
         flex-direction: column
         justify-content: space-around
