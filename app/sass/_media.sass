@@ -62,12 +62,20 @@
         .callback__form
             grid-template-columns: repeat(1, 1fr)
     .contacts
+        .contacts__container
+            padding: 10px 0
+        .contacts__title
+            margin-bottom: 0
         .contacts__content
-            padding-top: 0
-            grid-template-columns: repeat(1, 1fr)
+            grid-template-columns: 1fr
         .contacts__element
-            padding-bottom: $gutter
-
+            padding: 0 $gutter
+    // .contacts
+    //     .contacts__content
+    //         padding-top: 0
+    //         grid-template-columns: repeat(1, 1fr)
+    //     .contacts__element
+    //         padding-bottom: $gutter
 
 /* Extra Small Devices */
 @media only screen and (max-width : 480px)
