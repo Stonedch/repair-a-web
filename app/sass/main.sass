@@ -164,10 +164,13 @@
         font-family: monospace
 
 .callback
-    padding: 30px $gutter
-    background-color: $dark
+    margin:
+        bottom: 30px
+        left: 30px
+        right: 30px
     .callback__input
-        background-color: lighten($dark, 6%)
+        background-color: darken($dark, 8%)
+        color: lighten($dark, 20%)
         border: none
         padding: 15px 20px
         width: 100%
@@ -176,13 +179,20 @@
         outline: none
         transition: background-color .25s ease
         &:focus
-            background-color: $light
+            background-color: darken($dark, 6%)
+            color: #fff
+            &::placeholder
+                color: #fff
         &::placeholder
             color: lighten($dark, 20%)
     .callback__form
-        grid-gap: $gutter
-        grid-template-columns: repeat(4, 1fr)
+        display: grid
+        grid-row-gap: 10px
+        grid-template-columns: 1fr
     .callback__button
+        background-color: darken($dark, 8%)
+        color: #fff
+        border: none
         font-size: 17px
         padding: 14.5px
         width: 100%
