@@ -148,20 +148,32 @@
     .price__container
         padding: 60px 0
         display: grid
-        grid-template-columns: repeat(2, 1fr) 
+        grid-template-columns: repeat(2, 1fr)
         grid-gap: $gutter
+    .price__container_one-col
+        margin: 0 auto
+        max-width: 900px
+        grid-template-columns: 1fr
     .price__group
         .price__group-title
         .price__group-element
             padding-left: 1em
             .price__group-element-title
+            .price__group-element-title_with-space
+                padding-bottom: 30px
             .price__group-element-list
                 padding-left: 2em
+            .price__group-element-list_two-col
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                list-style-type: none
             .price__group-element-list-product
             .price__group-element-list-link
                 color: #111
                 &:hover
                     border-bottom: 1px solid #111
+    .price__group_center
+        text-align: center
 
 .portfolio
     padding:
