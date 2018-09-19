@@ -7,6 +7,5 @@ Front-end for repair-a
 To run the application for the test.
 
 ```console
-foo@bar: repair-a-front $ npm install
-foo@bar: repair-a-front $ gulp
+foo@bar: repair-a-front $ mvn clean install
 ```
