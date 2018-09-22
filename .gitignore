@@ -5,8 +5,13 @@ src/main/web/etc/
 src/main/web/node/
 src/main/web/package-lock.json
 
+src/main/resources/static/
+src/main/resources/templates/
+
 target/
 
 .vscode/
 .settings/
-.project/
+.classpath
+.project
+bin/
