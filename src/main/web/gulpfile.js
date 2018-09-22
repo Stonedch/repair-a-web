@@ -45,4 +45,4 @@ gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
     gulp.watch('app/*.html', browserSync.reload);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['sass', 'js']);

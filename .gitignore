@@ -5,5 +5,8 @@ src/main/web/etc/
 src/main/web/node/
 src/main/web/package-lock.json
 
-.settings
-.project
+target/
+
+.vscode/
+.settings/
+.project/
