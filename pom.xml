@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.repaira</groupId>
@@ -23,44 +22,45 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
+
                 <configuration>
                     <workingDirectory>src/main/web</workingDirectory>
-                    <installDirectory>src/main/web</installDirectory>
-                    <nodeVersion>v4.6.0</nodeVersion>
-                    <npmVersion>2.15.9</npmVersion>
                 </configuration>
+
                 <executions>
                     <execution>
                         <id>install node and npm</id>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>install-node-and-npm</goal>
                         </goals>
-                        <phase>generate-resources</phase>
+                        <configuration>
+                            <nodeVersion>v10.11.0</nodeVersion>
+                            <npmVersion>6.4.1</npmVersion>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>npm install</id>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>npm</goal>
                         </goals>
-                        <phase>generate-resources</phase>
-                        <configuration>
-                            <arguments>install</arguments>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>gulp build</id>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>gulp</goal>
                         </goals>
-                        <phase>generate-resources</phase>
-                        <configuration>
-                        </configuration>
                     </execution>
                 </executions>
+
             </plugin>
+
         </plugins>
     </build>
 

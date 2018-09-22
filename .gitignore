@@ -1,4 +1,6 @@
-package-lock.json
-node_modules/
-css/
-app/.DS_Store
+src/main/web/app/css/main.min.css
+src/main/web/app/js/scripts.min.js
+src/main/web/node_modules/
+src/main/web/etc/
+src/main/web/node/
+src/main/web/package-lock.json
