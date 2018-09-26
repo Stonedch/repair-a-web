@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PriceListController {
 
-    @GetMapping("/price-list")
-    public String getPortfolio() {
-        return "/price-list";
-    }
+    // @GetMapping("/price-list")
+    // public String getPortfolio() {
+    //     return "/price-list";
+    // }
 }
