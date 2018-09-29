@@ -1,0 +1,48 @@
+@import "vars"
+
+.header
+    display: grid
+    height: 200px 
+    background: url(../images/0-background.jpg)
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $background-dark
+        opacity: .75
+
+    .header__content
+        z-index: 1
+
+    .header__element
+        margin: 0
+        padding: 3px 3px 0 3px
+        position: absolute
+        font-family: intro-grid, sans-serif
+        font-weight: normal
+        font-size: 18px
+        line-height: 1
+        color: $text-light
+        background-color: $background-dark
+
+    .header__element-title
+        bottom: 0
+        left: 0
+
+    .header__element-nav
+        top: 0
+        right: 0
+
+    .header__link
+        color: $text-light
+        text-decoration: none
+        &:hover
+            text-decoration: underline
