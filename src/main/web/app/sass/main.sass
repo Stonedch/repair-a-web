@@ -3,17 +3,20 @@
 @import "base"
 @import "vars"
 
-@import "header-style"
+@import "header-section"
+@import "info-section"
 
-.container
+.main
     margin-left: 300px
 
-.content
-    margin: 20px auto
+.main__container
+    margin: 30px auto 60px auto
     max-width: 900px
-    background: #fff
-    box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.1)
+    box-shadow: 0 0 2px 0 rgba(39, 43, 47, 0.3)
 
+.main__container-content
+    background-color: #fff;
+    padding: 35px 65px
 
 .hidden-menu
     display: none
@@ -79,35 +82,6 @@
                 margin: 4px
             p
                 margin: 0 0 0 20px
-
-.about
-    .about__container
-        display: grid
-        grid-template-columns: 1fr 1fr
-    .about__content
-        .about__title
-            margin-top: 0
-            margin-bottom: 40px
-        padding:
-            top: 60px
-            bottom: 60px
-        img
-            margin-top: 20px
-            width: 100%
-    .about__content_left
-        border-right: 1px solid #dadada
-        font-size: 18px
-        padding:
-            right: 60px
-    .about__content_right
-        font-size: 18px
-        padding:
-            left: 40px
-.about_center
-    .about__container
-        margin: 0 auto
-        max-width: 900px
-        grid-template-columns: 1fr
 
 .price
     h2, h3, ul, li, a
