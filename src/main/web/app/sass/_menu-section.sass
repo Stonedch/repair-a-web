@@ -41,6 +41,43 @@
         &:hover
             text-decoration: underline
 
+.btn-menu
+    display: none
+    background-color: $background-dark
+    padding: 5px
+    position: fixed
+    top: 5px
+    left: 5px
+    cursor: pointer
+    transition: left .25s
+    z-index: 3
+    width: 35px
+    -webkit-transform: translateZ(0)
+    -webkit-backface-visibility: hidden
+.btn-menu span
+    display: block
+    height: 5px
+    background-color: #fff
+    margin: 5px 0 0
+    transition: all .1s linear .23s
+    position: relative
+.btn-menu span.btn-menu__first
+    margin-top: 0
+.menu-ticker
+    display: none
+.menu-ticker:checked ~ .btn-menu
+    left: 265px
+.menu-ticker:checked ~ .menu
+    left: 0
+.menu-ticker:checked ~ .btn-menu span.btn-menu__first
+    -webkit-transform: rotate(45deg)
+    top: 10px
+.menu-ticker:checked ~ .btn-menu span.btn-menu__second
+    opacity: 0
+.menu-ticker:checked ~ .btn-menu span.btn-menu__third
+    -webkit-transform: rotate(-45deg)
+    top: -10px
+
 .number-info_menu
     margin: 0 auto
     padding: 1em 0
