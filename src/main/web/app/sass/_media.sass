@@ -13,97 +13,17 @@
         .main__container
             max-width: 750px
     .menu
-        display: none
-
-    .container
-        width: 100%
-        max-width: none
-        margin: 0
-        padding: 0
-    .content
-        margin: 5px
-        padding: 5px
-    .hidden-menu
         display: block
-        position: fixed
-        list-style:none
         padding: 10px
         margin: 0
         box-sizing: border-box
-        width: 200px
-        background-color: darken($dark, 8%)
-        height: 100%
-        top: 0
-        left: -200px
+        left: -300px
         transition: left .2s
         z-index: 2
         -webkit-transform: translateZ(0)
         -webkit-backface-visibility: hidden
-        ul,li, a
-            list-style-type: none
-            text-decoration: none
-            margin: 0
-            padding: 0
-        .hidden-menu__nav
-            margin-top: 50px
-            text-align: center
-        .hidden-menu__link
-            color: #fff
-            border-bottom: 1px solid #fff
-    .hidden-menu-ticker
-        display: none
-    .hidden-menu-ticker:checked ~ .btn-menu
-        left: 160px
-    .hidden-menu-ticker:checked ~ .hidden-menu
-        left: 0
-    .hidden-menu-ticker:checked ~ .btn-menu span.first
-        -webkit-transform: rotate(45deg)
-        top: 10px
-    .hidden-menu-ticker:checked ~ .btn-menu span.second
-        opacity: 0
-    .hidden-menu-ticker:checked ~ .btn-menu span.third
-        -webkit-transform: rotate(-45deg)
-        top: -10px
     .btn-menu
-        color: #fff
-        background-color: darken($dark, 8%)
-        padding: 5px
-        position: fixed
-        top: 5px
-        left: 5px
-        cursor: pointer
-        transition: left .23s
-        z-index: 4
-        width: 35px
-        -webkit-transform: translateZ(0)
-        -webkit-backface-visibility: hidden
-    .btn-menu span
         display: block
-        height: 5px
-        background-color: #fff
-        margin: 5px 0 0
-        transition: all .1s linear .23s
-        position: relative
-    .btn-menu span.first
-        margin-top: 0
-    .button
-        font-size: 18px
-    .about
-        .about__container
-            grid-template-columns: 1fr
-            .about__title
-                margin-bottom: 10px
-        .about__content
-            padding:
-                top: 20px
-                bottom: 20px
-                left: 20px
-                right: 20px
-        .about__content_left
-            border: none
-            border-bottom: 1px solid #dadada
-            font-size: 18px
-        .about__content_right
 
 /* Small Devices */
 @media only screen and (max-width : 775px)
