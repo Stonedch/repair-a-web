@@ -6,6 +6,7 @@
 @import "base"
 @import "vars"
 
+@import "menu-section"
 @import "header-section"
 @import "info-section"
 @import "footer-section"
@@ -35,64 +36,23 @@
 .hidden-menu-ticker
     display: none
 
-.menu
-    display: grid
-    position: fixed
-    top: 0
-    left: 0
-    z-index: 3
-    min-height: 100%
-    width: 300px
-    .menu__container
-        display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: 130px minmax(0, 100%) 130px
-        background-color: #fff
-    .menu__header
-        background-color: darken($dark, 8%)
-        text-align: center
-        height: 130px
-        color: #fff
-        .menu__title
-            margin: 0
-            font-size: 50px
-            font-family: intro-grid, sans-serif
-            font-weight: 
-        .menu__location-info
-            margin: 0
-            font-size: 13px
-            font-family: sans-serif
-            font-weight: normal
-    .menu__nav
-        margin: 0
-        padding: 50px 0
-        text-align: center
-        .menu__link
-            font-family: raleway-grid, sans-serif
-            font-size: 16px
-            color: #333
-        ul,li, a
-            list-style-type: none
-            text-decoration: none
-            margin: 0
-            padding: 0
-    .menu__footer
-        padding: 10px 0
-        display: flex
-        flex-direction: column
-        justify-content: space-around
-        background-color: darken($dark, 8%)
-        text-align: center
-        color: #fff
-        .menu__footer-element
-            margin-left: 30px
-            display: flex
-            font-family: monospace
-            font-size: 15px
-            i
-                margin: 4px
-            p
-                margin: 0 0 0 20px
+.nav
+    display: flex
+    flex-direction: column
+    .nav__element
+        font-family: "Lato", sans-serif
+        font-size: 1em
+        line-height: 2.3
+        &:hover
+            text-decoration: underline
+
+.number-info
+    text-align: center
+    .number-info__element
+        font-family: "Rokkit", sans-serif
+        font-size: 1em
+        line-height: 1.5
+        color: $text-light
 
 .price
     h2, h3, ul, li, a
