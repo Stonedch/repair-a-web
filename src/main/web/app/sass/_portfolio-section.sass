@@ -1,0 +1,10 @@
+.portfolio
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1em
+    .portfolio__image
+        width: 100%
+        filter: grayscale(0.75)
+        transition: .3s ease-in-out
+        &:hover
+            filter: grayscale(0)
