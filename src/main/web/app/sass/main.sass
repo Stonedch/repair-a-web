@@ -52,40 +52,10 @@
         line-height: 1.5
         color: $text-light
 
-.price
-    h2, h3, ul, li, a
-        margin: 0
-        padding: 0
-        text-decoration: none
-    .price__container
-        padding: 60px 0
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
-        grid-gap: $gutter
-    .price__container_one-col
-        margin: 0 auto
-        max-width: 900px
-        grid-template-columns: 1fr
-    .price__group
-        .price__group-title
-        .price__group-element
-            padding-left: 1em
-            .price__group-element-title
-            .price__group-element-title_with-space
-                padding-bottom: 30px
-            .price__group-element-list
-                padding-left: 2em
-            .price__group-element-list_two-col
-                display: grid
-                grid-template-columns: repeat(2, 1fr)
-                list-style-type: none
-            .price__group-element-list-product
-            .price__group-element-list-link
-                color: #111
-                &:hover
-                    border-bottom: 1px solid #111
-    .price__group_center
-        text-align: center
+.contacts-info
+    padding-left: 1.5em
+    border-left: 3px solid $text-dark
+
 
 .contacts
     background-color: $dark
@@ -99,46 +69,13 @@
     .contacts__element
         padding: 0 $gutter
         font-family: monospace
-.contacts__info
-    font-family: monospace
-    a
-        text-decoration: none
-    p
-        padding: 3px 0
-        margin: 0
 
-.callback
-    margin:
-        bottom: 30px
-        left: 30px
-        right: 30px
-    .callback__input
-        background-color: darken($dark, 8%)
-        color: lighten($dark, 20%)
-        border: none
-        padding: 15px 20px
-        width: 100%
-        font-family: Arial, sans-serif
-        font-style: italic
-        outline: none
-        transition: background-color .25s ease
-        &:focus
-            background-color: darken($dark, 6%)
-            color: #fff
-            &::placeholder
-                color: #fff
-        &::placeholder
-            color: lighten($dark, 20%)
-    .callback__form
-        display: grid
-        grid-row-gap: 10px
-        grid-template-columns: 1fr
-    .callback__button
-        background-color: darken($dark, 8%)
-        color: #fff
-        border: none
-        font-size: 17px
-        padding: 14.5px
-        width: 100%
+// .contacts__info
+//     font-family: monospace
+//     a
+//         text-decoration: none
+//     p
+//         padding: 3px 0
+//         margin: 0
 
 @import "media"

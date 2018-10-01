@@ -13,58 +13,40 @@
 
 <body>
 
-    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-    <label class="btn-menu" for="hmt">
-        <span class="first"></span>
-        <span class="second"></span>
-        <span class="third"></span>
+    <input  class="menu-ticker" id="menu-ticker" type="checkbox">
+    <label class="btn-menu" for="menu-ticker">
+        <span class="btn-menu__first"></span>
+        <span class="btn-menu__second"></span>
+        <span class="btn-menu__third"></span>
     </label>
 
-    <section class="hidden-menu">
-        <ul class="hidden-menu__nav">
-            <li><a class="hidden-menu__link" href="/">О компании</a></li>
-            <li><a class="hidden-menu__link" href="/portfolio">Портфолио</a></li>
-            <!-- <li><a class="hidden-menu__link" href="/price-list">Услуги</a></li> -->
-            <li><a class="hidden-menu__link" href="https://drive.google.com/file/d/1NCQ413XHrJw4KYcA0NcNmT9UvALHW6ux/view">Услуги</a></li>
-            <li><a class="hidden-menu__link" href="/work">Вакансии</a></li>
-            <li><a class="hidden-menu__link" href="/contacts">Контакты</a></li>
-        </ul>
-    </section>
-
     <section class="menu">
-        <div class="menu__container">
-            <div class="menu__header">
-                <h1 class="menu__title">Repair-a</h1>
-                <p class="menu__location-info">Нижний Новгород</p>
+        <div class="menu__header">
+            <img class="menu__logo" src="images/logo-color.svg" alt="">
+            <h1 class="menu__title">Repair-a</h1>
+            <p class="menu__location-info">Россия, Нижний Новгород</p>
+            <div class="menu__out-nav">
+                <a href=""><i class="menu__out-nav-element fab fa-vk"></i></a>
+                <a href=""><i class="menu__out-nav-element fab fa-instagram"></i></a>
+                <a href=""><i class="menu__out-nav-element fab fa-google-drive"></i></a>
+                <a href=""><i class="menu__out-nav-element fas fa-envelope"></i></a>
             </div>
-            <ul class="menu__nav">
-                <li><a class="menu__link" href="/">О компании</a></li>
-                <li><a class="menu__link" href="/portfolio">Портфолио</a></li>
-                <!-- <li><a class="menu__link" href="/price-list">Услуги</a></li> -->
-                <li><a class="menu__link" href="https://drive.google.com/file/d/1NCQ413XHrJw4KYcA0NcNmT9UvALHW6ux/view">Услуги</a></li>
-                <li><a class="menu__link" href="/work">Вакансии</a></li>
-                <li><a class="menu__link" href="/contacts">Контакты</a></li>
-            </ul>
-            <div class="menu__footer">
-                <div class="menu__footer-element">
-                    <i class="fas fa-phone"></i>
-                    <p class="menu__phone-number"> +7 (904) 057-66-68</p>
-                </div>
-                <div class="menu__footer-element">
-                    <i class="fas fa-phone"></i>
-                    <p> +7 (910) 897-48-27</p>
-                </div>
-                <div class="menu__footer-element">
-                    <i class="fas fa-at"></i>
-                    <p>remonta52mail@gmail.com</p>
-                </div>
-            </div>
+        </div>
+        <div class="number-info number-info_menu">
+            <p class="number-info__element"> +7 (904) 057-66-68</p>
+            <p class="number-info__element"> +7 (910) 897-48-27</p>
+        </div>
+        <div class="nav nav_menu">
+            <a class="nav__element" href="/">О компании</a>
+            <a class="nav__element" href="/portfolio">Портфолио</a>
+            <a class="nav__element" href="https://drive.google.com/file/d/1NCQ413XHrJw4KYcA0NcNmT9UvALHW6ux/view">Услуги</a>
+            <a class="nav__element" href="/work">Вакансии</a>            <a class="nav__element" href="/contacts">Контакты</a>
         </div>
     </section>
 
-    <div class="container">
+    <div class="main">
 
-        <div class="content">
+        <div class="main__container">
 
             <header class="header">
                 <div class="header__content">
@@ -77,47 +59,31 @@
                 </div>
             </header>
 
-            <section class="about about_center">
-                <div class="about__container">
-                    <div class="about__content">
-                        <h2 class="about__title">Связаться с нами</h2>
-                        <p>Уважаемые посетители нашего сайта! Для получения предварительных цен просим Вас предоставить максимально
-                            возможную информацию об объекте: объем работ, виды работ, сроки, и пр. Или же просто оставить
-                            Ваши контактные данные, и Мы сами свяжемся с Вами на предмет выявления Ваших потребностей.</p>
-                    </div>
-                    <div class="callback">
-                        <form class="callback__form grid">
-                            <input class="callback__input" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
-                            <input class="callback__input" type="tel" name="name" placeholder="Ваш номер телефона" autocomplete="off" required>
-                            <input class="callback__input" type="text" name="name" placeholder="Сообщение" autocomplete="off">
-                            <button class="callback__button button">Написать</button>
-                        </form>
-                    </div>
-                    <div class="about__content">
-                        <h2 class="about__title">Вы можете обратиться к нам по следующим контактным данным:</h2>
-                        <div class="contacts__info">
-                            <p><i class="fas fa-map-marker-alt"></i> Россия, Нижний Новгород, Нижегородская область</p>
-                            <p><i class="fas fa-phone"></i> +7 (904) 057-66-68</p>
-                            <p><i class="fas fa-phone"></i> +7 (910) 897-48-27</p>
-                            <p><i class="fas fa-at"></i> remonta52mail@gmail.com</p>
-                            <p><i class="fab fa-vk"></i> vk.com/publicrepaira</p>
-                            <p><i class="fab fa-instagram"></i> instagram.com/remonta52</p>
+            <div class="main__container-content">
+
+                <section class="info-section">
+                        <h3 class="info-section__title">Связаться с нами</h2>
+                        <p class="info-section__paragraph">Уважаемые посетители нашего сайта! Для получения предварительных цен просим Вас предоставить максимально возможную информацию об объекте: объем работ, виды работ, сроки, и пр.</p>
+                        <div class="contacts-info">
+                            <p class="info-section__paragraph">Вы можете обратиться к нам по следующим контактным данным:</h2>
+                            <p class="info-section__paragraph"><i class="fas fa-map-marker-alt"></i> Россия, Нижний Новгород, Нижегородская область</p>
+                            <p class="info-section__paragraph"><i class="fas fa-phone"></i> +7 (904) 057-66-68</p>
+                            <p class="info-section__paragraph"><i class="fas fa-phone"></i> +7 (910) 897-48-27</p>
+                            <p class="info-section__paragraph"><i class="fas fa-at"></i> remonta52mail@gmail.com</p>
+                            <p class="info-section__paragraph"><i class="fab fa-vk"></i> vk.com/publicrepaira</p>
+                            <p class="info-section__paragraph"><i class="fab fa-instagram"></i> instagram.com/remonta52</p>
                         </div>
-            </section>
+                        <img class="info-section__image" src="images/0-info.jpg" alt="">
+                </section>
 
             </div>
 
-            <footer class="footer">
-                <div class="footer__logo">
-                    Repair-A
-                </div>
-                <div class="footer__copy">~©~</div>
-            </footer>
+        </div>
 
-            </div>
+    </div>
 
-            <link rel="stylesheet" href="css/main.min.css">
-            <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
 
 </body>
 
