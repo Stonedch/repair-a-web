@@ -45,7 +45,7 @@ gulp.task('generate-fonts', function() {
 });
 
 gulp.task('generate-images', function() {
-    return gulp.src('app/img/**/*')
+    return gulp.src('app/images/**/*')
                .pipe(gulp.dest('../resources/static/images/'))
 });
 
