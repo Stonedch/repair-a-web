@@ -2,6 +2,8 @@ src/main/webapp/app/css/main.min.css
 src/main/webapp/app/js/scripts.min.js
 node_modules/
 package-lock.json
+yarn.lock
+yarn-error.log
 
 src/main/resources/static/
 src/main/resources/templates/
