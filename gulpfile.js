@@ -16,9 +16,7 @@ gulp.task("default", [
     "generate-templates",
     "generate-styles",
     "generate-js",
-    "generate-fonts",
     "generate-images",
-    "generate-libs",
 ]);
 
 gulp.task("generate-templates", function() {
@@ -42,17 +40,7 @@ gulp.task("generate-js", function() {
                .pipe(gulp.dest(resources + "static/js/"))
 });
 
-gulp.task("generate-fonts", function() {
-    return gulp.src(webapp + "app/fonts/**/*.woff")
-               .pipe(gulp.dest(resources + "static/fonts/"))
-});
-
 gulp.task("generate-images", function() {
     return gulp.src(webapp + "app/images/**/*")
                .pipe(gulp.dest(resources + "static/images/"))
-});
-
-gulp.task("generate-libs", function() {
-    return gulp.src(webapp + "app/libs/**/*")
-               .pipe(gulp.dest(resources + "static/libs/"))
 });
