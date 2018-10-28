@@ -1,9 +1,6 @@
 {
     "name": "repair-a-web",
     "version": "1.0.0",
-    "repository": "https://github.com/stonedch/repair-a-web.git",
-    "author": "Max Mukhin <stch.max.muhin@gmail.com>",
-    "license": "GPL-3.0",
     "dependencies": {
         "browser-sync": "^2.26.3",
         "gulp": "^3.9.1",

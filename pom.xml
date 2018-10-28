@@ -9,7 +9,6 @@
     <version>1.0</version>
     <packaging>jar</packaging>
     <name>repair-a</name>
-    <url>http://www.repair-a.ru</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
