@@ -1,9 +1,7 @@
-src/main/web/app/css/main.min.css
-src/main/web/app/js/scripts.min.js
-src/main/web/node_modules/
-src/main/web/etc/
-src/main/web/node/
-src/main/web/package-lock.json
+src/main/webapp/app/css/main.min.css
+src/main/webapp/app/js/scripts.min.js
+node_modules/
+package-lock.json
 
 src/main/resources/static/
 src/main/resources/templates/
