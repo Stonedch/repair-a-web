@@ -2,7 +2,7 @@
 
 This is the source for the repair-a.ru website.
 
-![](etc/screenshot-0.png)
+![](screenshots/screenshot-0.png)
 
 ## Getting Started
 
