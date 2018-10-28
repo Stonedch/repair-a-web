@@ -26,7 +26,7 @@ gulp.task("generate-templates", function() {
                .pipe(gulp.dest(resources + "templates/"))
 });
 
-gulp.task('generate-styles', function() {
+gulp.task("generate-styles", function() {
     return gulp.src(webapp + "app/sass/**/*.sass")
                .pipe(sass({outputStyle: "expand"}).on("error", notify.onError()))
                .pipe(rename({suffix: ".min", prefix : ''}))
@@ -52,7 +52,7 @@ gulp.task("generate-images", function() {
                .pipe(gulp.dest(resources + "static/images/"))
 });
 
-gulp.task('generate-libs', function() {
+gulp.task("generate-libs", function() {
     return gulp.src(webapp + "app/libs/**/*")
                .pipe(gulp.dest(resources + "static/libs/"))
 });
