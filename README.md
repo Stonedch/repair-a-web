@@ -18,6 +18,10 @@ foo@bar: repair-a-web $ mvn install
 foo@bar: repair-a-web $ mvn spring-boot:run
 ```
 
+## Authors
+
+* **Max Mukhin** - [Stonedch](https://github.com/stonedch)
+
 ## License
 
 [GNU General Public License](LICENSE.md)
