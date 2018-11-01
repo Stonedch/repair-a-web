@@ -20,12 +20,12 @@ gulp.task("default", [
 ]);
 
 gulp.task("generate-templates", function() {
-    return gulp.src([webapp + "app/**/*.html"])
+    return gulp.src([webapp + "**/*.html"])
                .pipe(gulp.dest(resources + "templates/"))
 });
 
 gulp.task("generate-styles", function() {
-    return gulp.src(webapp + "app/sass/**/*.sass")
+    return gulp.src(webapp + "sass/**/*.sass")
                .pipe(sass({outputStyle: "expand"}).on("error", notify.onError()))
                .pipe(rename({suffix: ".min", prefix : ''}))
                .pipe(autoprefixer(["last 15 versions"]))
@@ -34,13 +34,13 @@ gulp.task("generate-styles", function() {
 });
 
 gulp.task("generate-js", function() {
-    return gulp.src([webapp + "app/js/common.js"])
+    return gulp.src([webapp + "js/common.js"])
                .pipe(concat("scripts.min.js"))
                .pipe(uglify())
                .pipe(gulp.dest(resources + "static/js/"))
 });
 
 gulp.task("generate-images", function() {
-    return gulp.src(webapp + "app/images/**/*")
+    return gulp.src(webapp + "images/**/*")
                .pipe(gulp.dest(resources + "static/images/"))
 });
